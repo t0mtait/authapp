@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authapp by @t0mtait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="text-center">
+            <p class="text-4xl font-bold text-gray-900 dark:text-white">
+                Hello, <%= name %>
+            </p>
+            <form action="/logout" method="get">
+                <button type="submit" class="text-white bg-blue-700 mt-2 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-md rounded-lg text-2xl px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Logout</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
